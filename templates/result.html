@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="result">
+        <h2>Predicted Disease: {{ predicted_disease }}</h2>
+        <h3>Description:</h3>
+        <p>{{ desc }}</p>
+        <h3>Precautions:</h3>
+        <ul>
+            {% for p in pre %}
+                <li>{{ p if p else 'N/A' }}</li>
+            {% endfor %}
+        </ul>
+        <h3>Medications:</h3>
+        <ul>
+            {% for m in med %}
+                <li>{{ m if m else 'N/A' }}</li>
+            {% endfor %}
+        </ul>
+        <h3>Diets:</h3>
+        <ul>
+            {% for d in die %}
+                <li>{{ d if d else 'N/A' }}</li>
+            {% endfor %}
+        </ul>
+        <h3>Workouts:</h3>
+        <ul>
+            {% for w in wrkout %}
+                <li>{{ w if w else 'N/A' }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

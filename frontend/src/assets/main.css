@@ -1,0 +1,120 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f7fafc;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a86ff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2667cc;
+}
+
+/* Element Plus overrides */
+.el-button--primary {
+  background: linear-gradient(135deg, #3a86ff, #2667cc) !important;
+  border: none !important;
+}
+
+.el-button--primary:hover {
+  background: linear-gradient(135deg, #2667cc, #1a4da6) !important;
+}
+
+.el-tag {
+  border-radius: 6px !important;
+}
+
+.el-input__inner {
+  border-radius: 8px !important;
+}
+
+.el-autocomplete-suggestion li {
+  padding: 8px 12px !important;
+}
+
+.el-autocomplete-suggestion li:hover {
+  background-color: #e0ecff !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(58, 134, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(58, 134, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(58, 134, 255, 0);
+  }
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}

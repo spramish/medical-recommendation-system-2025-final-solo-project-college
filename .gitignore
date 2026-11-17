@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node / Vue
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.vite/
+*.local
+
+# Environment & secrets
+.env
+.env.*
+*.secret
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
